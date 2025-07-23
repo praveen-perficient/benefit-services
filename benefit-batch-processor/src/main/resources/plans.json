@@ -1,0 +1,38 @@
+[
+  {
+    "id": 152,
+    "plan_name": "Cigna PPO Select",
+    "plan_type": "PPO",
+    "provider": "Cigna",
+    "fields": {
+      "includes_prescription": true,
+      "dental_coverage": true,
+      "vision_coverage": true
+    },
+    "event_message": "Dental & Vision coverage is enabled !!"
+  },
+  {
+    "id": 153,
+    "plan_name": "Cigna PPO Select",
+    "plan_type": "PPO",
+    "provider": "Cigna",
+    "fields": {
+      "includes_prescription": true,
+      "dental_coverage": true,
+      "vision_coverage": true
+    },
+    "event_message": "Dental & Vision coverage is enabled !!"
+  },
+  {
+    "id": 154,
+    "plan_name": "Cigna PPO Select",
+    "plan_type": "PPO",
+    "provider": "Cigna",
+    "fields": {
+      "includes_prescription": true,
+      "dental_coverage": true,
+      "vision_coverage": true
+    },
+    "event_message": "Dental & Vision coverage is enabled !!"
+  }
+]
