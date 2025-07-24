@@ -1,9 +1,9 @@
-package com.poc.mongodb.controller;
+package com.cigna.benefit.controller;
 
-import com.poc.mongodb.model.CustomerHealthPlans;
-import com.poc.mongodb.model.Customers;
-import com.poc.mongodb.model.HealthPlans;
-import com.poc.mongodb.service.HealthBeneService;
+import com.cigna.benefit.model.CustomerHealthPlans;
+import com.cigna.benefit.model.Customers;
+import com.cigna.benefit.model.HealthPlans;
+import com.cigna.benefit.service.HealthBeneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

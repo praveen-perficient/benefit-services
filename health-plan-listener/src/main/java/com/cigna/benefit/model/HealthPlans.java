@@ -1,4 +1,4 @@
-package com.poc.mongodb.model;
+package com.cigna.benefit.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

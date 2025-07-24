@@ -1,6 +1,6 @@
-package com.poc.mongodb.repository;
+package com.cigna.benefit.repository;
 
-import com.poc.mongodb.model.HealthPlans;
+import com.cigna.benefit.model.HealthPlans;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface HealthPlansRepository extends MongoRepository<HealthPlans,String> {

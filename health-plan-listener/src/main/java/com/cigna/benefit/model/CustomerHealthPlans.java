@@ -1,4 +1,4 @@
-package com.poc.mongodb.model;
+package com.cigna.benefit.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,11 +1,11 @@
-package com.poc.mongodb.service;
+package com.cigna.benefit.service;
 
-import com.poc.mongodb.model.CustomerHealthPlans;
-import com.poc.mongodb.model.Customers;
-import com.poc.mongodb.model.HealthPlans;
-import com.poc.mongodb.repository.CustomerHealthPlansRepository;
-import com.poc.mongodb.repository.CustomerRepository;
-import com.poc.mongodb.repository.HealthPlansRepository;
+import com.cigna.benefit.model.CustomerHealthPlans;
+import com.cigna.benefit.model.Customers;
+import com.cigna.benefit.model.HealthPlans;
+import com.cigna.benefit.repository.CustomerHealthPlansRepository;
+import com.cigna.benefit.repository.CustomerRepository;
+import com.cigna.benefit.repository.HealthPlansRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
