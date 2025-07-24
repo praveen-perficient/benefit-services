@@ -18,6 +18,7 @@
         <module>health-plan-producer</module>
         <module>cust-event-producer</module>
         <module>benefit-batch-processor</module>
+        <module>user-management</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
