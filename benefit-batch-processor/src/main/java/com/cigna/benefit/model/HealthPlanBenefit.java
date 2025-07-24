@@ -1,4 +1,4 @@
-package com.poc.JsonFor.model;
+package com.cigna.benefit.model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -20,7 +20,7 @@ public class HealthPlanBenefit {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    private class Fields {
+    private static class Fields {
         @JsonProperty("includes_prescription")
         private boolean includesPrescription;
 

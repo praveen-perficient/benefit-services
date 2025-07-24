@@ -1,17 +1,20 @@
-package com.poc.JsonFor;
+package com.cigna.benefit;
 
-import com.poc.JsonFor.Service.KafkaBatchProducerService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.cigna.benefit.Service.KafkaBatchProducerService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class JsonForApplication implements CommandLineRunner {
 
-	@Autowired
-	private KafkaBatchProducerService service1;
 
+	private final KafkaBatchProducerService service1;
+
+	public JsonForApplication(KafkaBatchProducerService service1) {
+		this.service1 = service1;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(JsonForApplication.class, args);
