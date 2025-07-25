@@ -1,0 +1,11 @@
+id,plan_name,plan_type,provider,includes_prescription,dental_coverage,vision_coverage,event_message
+151,Cigna PPO Select,PPO,Cigna,TRUE,FALSE,FALSE,Dental & Vision coverage is not enabled !!
+152,Cigna PPO Select,PPO,Cigna,TRUE,TRUE,TRUE,Dental & Vision coverage is enabled !!
+153,Cigna PPO Select,PPO,Cigna,FALSE,TRUE,TRUE,Vision coverage is enabled !!
+154,Cigna PPO Select,PPO,Cigna,TRUE,TRUE,FALSE,Dental & Vision coverage is not enabled !!
+155,Cigna PPO Select,PPO,Cigna,TRUE,TRUE,TRUE,Dental coverage is enabled !!
+156,Cigna PPO Select,PPO,Cigna,FALSE,TRUE,TRUE,Dental & Vision coverage is enabled !!
+157,Cigna PPO Select,PPO,Cigna,TRUE,TRUE,FALSE,Vision coverage is enabled !!
+158,Cigna PPO Select,PPO,Cigna,TRUE,TRUE,TRUE,Dental & Vision coverage is not enabled !!
+159,Cigna PPO Select,PPO,Cigna,TRUE,TRUE,TRUE,Dental & Vision coverage is enabled !!
+160,Cigna PPO Select,PPO,Cigna,FALSE,TRUE,TRUE,Vision coverage is enabled !!

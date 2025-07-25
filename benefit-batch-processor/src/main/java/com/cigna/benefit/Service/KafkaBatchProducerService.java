@@ -7,11 +7,13 @@ import com.cigna.benefit.model.HealthPlanBenefit;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.InputStreamReader;
 import java.util.List;
 
 @Service
+@Slf4j
 public class KafkaBatchProducerService {
 
     private static final String TOPIC = "health-benefits";
@@ -23,6 +25,8 @@ public class KafkaBatchProducerService {
 
     public void sendBatch() {
         try {
+            log.info("Starting batch send of health plan benefits from CSV...");
+
             InputStreamReader reader = new InputStreamReader(
                     new ClassPathResource("plans.csv").getInputStream()
             );
@@ -36,14 +40,17 @@ public class KafkaBatchProducerService {
 
             ObjectMapper mapper = new ObjectMapper();
             String jsonArray = mapper.writeValueAsString(plans);
+            log.debug("Parsed JSON array: {}", jsonArray);
 
             for (HealthPlanBenefit plan : plans) {
                 kafkaTemplate.send(TOPIC, plan);
+                log.debug("Sent plan to Kafka: {}", plan);
             }
 
-            System.out.println("CSV data sent to Kafka topic: " + TOPIC);
+            log.info("Successfully sent {} health plans to Kafka topic '{}'", plans.size(), TOPIC);
+
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Error while sending batch data to Kafka: {}", e.getMessage(), e);
         }
     }
 }
