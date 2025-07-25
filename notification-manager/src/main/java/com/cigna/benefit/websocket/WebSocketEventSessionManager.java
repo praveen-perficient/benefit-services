@@ -1,8 +1,11 @@
-package com.consumer.benefit.websocket;
+package com.cigna.benefit.websocket;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.socket.*;
+import org.springframework.web.socket.CloseStatus;
+import org.springframework.web.socket.WebSocketHandler;
+import org.springframework.web.socket.WebSocketMessage;
+import org.springframework.web.socket.WebSocketSession;
 
 @Component
 public class WebSocketEventSessionManager implements WebSocketHandler  {
